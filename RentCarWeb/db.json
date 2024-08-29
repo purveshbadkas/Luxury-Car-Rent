@@ -1,0 +1,54 @@
+{
+  "contact": [
+    {
+      "id": "b553",
+      "name": "soham",
+      "email": "yash.sarnaik@mitaoe.ac.in",
+      "feedback": "all might"
+    },
+    {
+      "id": "2d3e",
+      "name": "yadnesh",
+      "email": "sonalishirke2@gmail.com",
+      "feedback": "is noob"
+    },
+    {
+      "id": "fe72",
+      "name": "Soham Ramesh Shirke",
+      "email": "sohamshirke2002@gmail.com",
+      "feedback": "auspicious ride"
+    },
+    {
+      "id": "7200",
+      "name": "Yadnesh Ramesh Shirke",
+      "email": "yadneshshirke2004@gmail.com",
+      "feedback": "thanks"
+    }
+  ],
+  "rentcar": [
+    {
+      "id": "5198",
+      "firstName": "Yadnesh ",
+      "lastName": "Shirke",
+      "email": "yadnesh.shirke.ai@ghrcem.raisoni.net",
+      "phone": "123",
+      "pickupLocation": "pune",
+      "pickupTime": "23:24",
+      "returnLocation": "pune",
+      "returnTime": "23:25",
+      "comments": "lol"
+    },
+    {
+      "id": "1d56",
+      "firstName": "Yadnesh ",
+      "lastName": "Shirke",
+      "email": "yadnesh.shirke.ai@ghrcem.raisoni.net",
+      "phone": "123",
+      "pickupLocation": "pune",
+      "pickupTime": "14:37",
+      "returnLocation": "pune",
+      "returnTime": "15:37",
+      "comments": "lol"
+    }
+  ] 
+}

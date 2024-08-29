@@ -1,0 +1,17 @@
+{
+    "name": "contactus",
+    "version": "1.0.0",
+    "description": "contact form",
+    "main": "contact.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node server.js"
+    },
+    "author": "yadnesh",
+    "license": "ISC",
+    "dependencies": {
+      "cors": "^2.8.5",
+      "mongoose": "^8.3.1"
+    }
+  }
+  

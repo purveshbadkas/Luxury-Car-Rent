@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+body {
+  font-family: "Righteous", cursive;
+  background-color: #000034;;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #000034;
+  padding: 0 32px;
+  height: 200px;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.navbar-top {
+  background-color:#1d1d63;
+  color: #ffffff;
+  padding: 12px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-top.scrolled {
+  background-color: #000000;
+}
+
+.navbar-heading {
+  margin: 0;
+}
+
+.navbar-content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: last baseline;
+}
+
+.navbar-headings {
+  color: #ffffff;
+}
+
+.navbar-headings h1{
+  font-size: 35px;
+}
+
+.navbar-headings h3 {
+  margin: 70;
+}
+
+.navbar-phone .phone-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  border-radius: 53px;
+  border: 2px solid #333;
+  transition: border-color 0.3s ease;
+}
+
+.navbar-phone .phone-button:hover {
+  border-color: #ff0000;
+}
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 60px 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 60px;
+  margin-bottom: 100px;
+}
+
+.tab-container {
+  position: relative;
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 1200px; /* Adjust the max-width as needed */
+background: rgb(82, 128, 182);
+background: linear-gradient(90deg, rgb(94, 129, 168) 1%, rgb(67, 114, 161) 53%, rgb(94, 128, 164) 100%);
+border: 1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  height: auto; /* Allow the height to adjust based on content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping of content */
+}
+
+.tab-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap; /* Allow wrapping of content */
+}
+
+.address-box,
+.car-selection {
+  flex: 0 0 30%; /* Set a fixed width for each box */
+  margin-right: 20px;
+  background-color: transparent;
+  margin-bottom: 20px; /* Add some spacing between boxes */
+}
+
+.address-box h2,
+.car-selection h2 {
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.address-box form,
+.car-selection form {
+  margin-bottom: 0; /* Remove bottom margin */
+}
+.address-box {
+  transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.address-box:hover {
+  transform: translateX(5px); /* Move form elements slightly to the right on hover */
+}
+.car-selection{
+  transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.car-selection:hover {
+  transform: translateX(5px); /* Move form elements slightly to the right on hover */
+}
+/* Additional styles for form elements */
+form {
+  margin: 0;
+}
+
+input[type='text'],
+input[type='time'],
+select {
+  width: 70%;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+body .container {
+  max-width: 100%; /* Adjusted to 90% of the viewport width */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 60px 40px; /* Adjusted padding for better spacing */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 60px; /* Reduced grid gap for better spacing */
+}
+body .container .card {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 0 auto;
+  background: transparent;
+  border-radius: 15px;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+}
+
+body .container .card .face {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container .card .face.face1 {
+  box-sizing: border-box;
+  padding: 20px;
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  border-radius: 5%;
+}
+body .container .card .face.face1 h2 {
+  margin-bottom: 40%;
+  padding-bottom: 20px;
+}
+body .container .card .face.face1 .java {
+  background-color: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 5%;
+}
+body .container .card .face.face2 {
+  transition: 0.5s;
+  background-image: linear-gradient(to right bottom, #052863, #1a3366, #2a3d68, #38486a, #46526c, #475675, #495a7d, #4a5e86, #3e5c98, #3359aa, #2a55ba, #294fc9);
+  border-radius: 5%;
+}
+body .container .card .face.face2 h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 10em;
+  color: #fff;
+  transition: 0.5s;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+body .container .card:hover .face.face2 {
+  height: 20px;
+}
+body .container .card:hover .face.face2 h2 {
+  font-size: 2em;
+}
+/* body .container .card:nth-child(1) .face.face2 {
+  background-image: linear-gradient(40deg, #fffc00 0%, #fc00ff 45%, #00fffc 100%);
+  border-radius: 15px;
+} */
+
+.card .details h4 
+{
+	margin-bottom: 10%;
+ 
+}
+.size
+{
+	display: flex;
+	gap: 30px;
+  color: black;
+}
+.size li {
+  list-style: none;
+  font-size: 1.2em;
+  width: 80px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black; /* Change border color to black */
+  font-weight: 1000;
+  opacity: 0.5;
+  color: darkblue; /* Set color to black */
+}
+
+.group 
+{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+	align-items: center;
+}
+.card .group h2 
+{
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 2em;
+}
+.card .group h2 sup 
+{
+	font-weight: 300;
+}
+.card .group h2 small 
+{
+	font-size: 0.75em;
+}
+
+.group {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px; /* Add margin-top to create space */
+  align-items: center;
+}
+
+.group a {
+  margin-left: 30px; /* Add margin-left to create space between .group and <a> tag */
+  display: inline-flex;
+  padding: 8px 20px;
+  background-color: lightcoral;
+  border: 2px solid #4ba9e9;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.group a:hover {
+  background-color: #4ba9e9;
+  color:red;
+  transform: translateY(-2px);
+}
+.card .face.face2 img {
+  width: 100%; /* Set width to 100% */
+  height: auto; /* Set height to auto to maintain aspect ratio */
+  display: block; /* Ensure the image is displayed as a block element */
+}
+
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 60px 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 60px;
+  margin-bottom: 100px; /* Add some spacing between cards and footer */
+}
+
+/* Updated footer styles */
+footer {
+  text-align: center;
+  background-color: #000034;;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  z-index: 1000;
+}
+
+

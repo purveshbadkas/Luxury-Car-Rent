@@ -1,0 +1,243 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: hsl(235, 100%, 5%);
+}
+
+.navbar-top {
+  background-color: #00021A;
+  color: #ffffff;
+  padding: 12px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-top.scrolled {
+  background-color: #000000;
+}
+
+.navbar-heading {
+  margin: 0;
+}
+
+.navbar-headings {
+  color: #fff;
+}
+
+.navbar-headings h2,
+.navbar-headings h3 {
+  margin: 0;
+}
+
+.main-content {
+  max-width: 1488px;
+  margin: 40px 0 80px;
+  padding: 0 64px 150px;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 80px;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: -390px;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-left: -390px;
+  margin-top: 50px;
+}
+
+.car-image {
+  width: 820px;
+  height: auto;
+  margin-right: 20px;
+  margin-top: 150px;
+}
+
+.car-image img {
+  width: 165%;
+  height: auto;
+  border: 0px solid #ddd;
+  border-radius: 0px;
+  margin-left: -390px;
+  margin-top: -40px;
+}
+
+.tab-container {
+  height: 30px;
+  width: 55%;
+  background-color: #1d1d63;
+  border-radius: 0px;
+  margin-top: 90px;
+}
+
+.tab {
+  border: 0px solid rgb(34, 34, 34);
+  background-color: #12123f;
+  border-radius: 0px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.car-info {
+  padding: 20px;
+  color: whitesmoke;
+}
+
+.car-form {
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  flex: 1;
+  margin-right: 25px;
+}
+
+.form-group:last-child {
+  margin-right: 0;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.button-container {
+  margin-top: 20px;
+  padding: 20px;
+  align-self: flex-end;
+}
+
+input[type='text'],
+input[type='time'],
+input[type='email'],
+input[type='tel'],
+select {
+  width: 78%;
+  height: 50%;
+  padding: 5px;
+  border: 0px solid #ffffff;
+  border-radius: 0px;
+  margin-bottom: 10px;
+}
+
+input[type='text1'],
+select {
+  width: 90%;
+  height: 150%;
+  padding: 5px;
+  border: 0px solid #000;
+  border-radius: 0px;
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #010539;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 2px;
+  border-color: whitesmoke;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #014ba0;
+  color: #ddd;
+  transform: translateY(-3px);
+}
+.content-heading,
+.paragraph,
+.heading {
+  color: #ffffff;
+}
+
+.footer-content .social-icons .txt {
+  color: #00bcd4;
+  margin-top: 50px;
+  font-weight: 500;
+  padding-left: 10px;
+  border-left: 25px solid #e91e63;
+  line-height: 1em;
+}
+
+.sci {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.sci li {
+  list-style: none;
+}
+
+.sci li a {
+  color: #fff;
+  font-size: 2em;
+  transition: 0.5s;
+}
+
+.sci li a:hover {
+  color: #00bcd4;
+}
+
+.car-image img {
+  transition: transform 0.3s ease;
+}
+
+.car-image img:hover {
+  transform: scale(1.05);
+}
+
+.form-group {
+  transition: transform 0.1s ease;
+}
+
+.form-group:hover {
+  transform: translateX(10px);
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-left {
+  animation: form 0.5s ease forwards;
+}
+
+.animate-right {
+  animation: tab-container 0.5s ease forwards;
+}

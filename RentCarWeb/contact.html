@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us @ Luxury Car Rentals</title>
+
+<link rel="stylesheet" type="text/css" href="contact.css">
+<script>
+	function handleSubmit() {
+		// e.preventDefault()
+		alert("Thanks for contacting us!")
+	}
+
+</script>
+</head>
+<body>
+	<article class="contact__bg"></article>
+	<section class="contact">
+		<div class="content">
+			<h2>Contact Us</h2>
+			<p>Thank you for considering <b>Luxury Car Rentals</b> for your car rental needs! We're here to assist you in any way we can. Whether you have questions about our services, need assistance with booking, or have feedback to share, our dedicated team is ready to help.</p>
+		</div>
+		<div class="container">
+			<div class="contactInfo">
+				<div class="box">
+					<div class="icon"><ion-icon name="location-outline"></ion-icon></div>
+					<div class="text">
+						<h3>Address</h3>
+						<p>Luxury Car Rentals,<br>Near G.H.Raisoni College,<br>Wagholi,Pune,<br>412207</p>
+					</div>
+				</div>
+				<div class="box">
+					<div class="icon"><ion-icon name="call-outline"></ion-icon></div>
+					<div class="text">
+						<h3>Phone</h3>
+						<p>9876543210</p>
+					</div>
+				</div>
+				<div class="box">
+					<div class="icon"><ion-icon name="mail-outline"></ion-icon></div>
+					<div class="text">
+						<h3>Email</h3>
+						<p>luxurycarrentals@gmail.com</p>
+					</div>
+				</div>
+				<h2 class="txt">Connect with us</h2>
+				<ul class="sci">
+					<li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+					<li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+					<li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+					<li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+				</ul>
+			</div>
+
+			<form id="contactForm" action="http://localhost:3000/contact" method="POST">
+				<div class="wrapper">
+					<div class="login_box">
+						<div class="login-header">
+							<span>Contact</span>
+						</div>
+			
+						<div class="input_box">
+							<input type="text" id="name" class="input-field" name="name" required>
+							<label for="name" class="label">Full Name</label>
+						</div>
+			
+						<div class="input_box">
+							<input type="email" id="email" class="input-field" name="email" required>
+							<label for="email" class="label">Email</label>
+						</div>
+			
+						<div class="input_box">
+							<input type="text" id="feedback" class="input-field" name="feedback" required>
+							<label for="feedback" class="label">Feedback</label>
+						</div>
+			
+						<div class="input_box">
+							<input id="submitFormButton" type="submit" class="input-submit" value="Submit">
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+	<script src="contact.js"></script>
+</body>
+</html>

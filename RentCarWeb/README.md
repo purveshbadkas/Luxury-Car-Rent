@@ -1,7 +1,5 @@
 # SuperCarWebsite
 Responsive Car Showcase Website along with e-Commerce eligibility with Html5, CSS3, JavaScript <br><br>
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger) &emsp;
-   
  ## Overview
  Responsive Next Generation Car showcase website including e-Commerce eligibility along with eye-catching remix icons, scrollbar, background video cover
  with modified carousel feature and scroll reveal annimation.
